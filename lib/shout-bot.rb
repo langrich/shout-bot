@@ -72,6 +72,6 @@ class ShoutBot
 
   def say(message)
     return unless @channel
-    @socket.puts "PRIVMSG #{@channel} :#{message}"
+    @socket.puts "NOTICE #{@channel} :#{message}"
   end
 end
